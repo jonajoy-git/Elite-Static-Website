@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Elite Football Academy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/png;base64,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" rel="icon">
+  <link href="assets/img/apple-touch" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly - v3.6.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+91 6589 5548 85</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">ka
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><span>Elite</span> Academia</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Menu</a></li>
+          <li class="dropdown"><a href="#"><span>Residential</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link-scrollto" href="#courses">Academic-courses</a></li>
+              <li><a class="nav-link-scrollto" href="#specials">Hostels & Rooms</a></li>
+            </ul>
+          <li><a class="nav-link scrollto" href="#specials">Explore</a></li>
+          <li><a class="nav-link scrollto" href="#events">Staffs</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Achievements</a></li>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li class="dropdown"><a href="#"><span>Our Offices</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Kochi</a></li>
+                  <li><a href="#">Bangaluru</a></li>
+                  <li><a href="#">Chennai</a></li>
+                  <li><a href="#">Malappuram</a></li>
+                  <li><a href="#">Hydrabad</a></li>
+                </ul>
+              </li>
+              <li><a href="#">U-12</a></li>
+              <li><a href="#">U-18</a></li>
+              <li><a href="#">Senior Team</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a trial</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to,<span><br>Elite Football Academy</span></h1>
+          <h2>Igniting Passion, Nurturing Talent and Building Careers!</h2>
+
+          <div class="btns">
+            <a href="#contact" class="btn-menu animated fadeInUp scrollto">Contact Us</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Trial</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://youtu.be/x8lygs0L8yk" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              
+              <img src="https://europe.theicef.com/wp-content/uploads/2020/09/Photo2.jpg" alt="">
+              
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>WHAT IS ELITE FOOTBALL ACADEMY ?</h3>
+            <p class="fst-italic">
+              ELITE Football Academy - Residential, is a purpose-driven project that enables passionate and talented youth to pursue academics with Football in equal measure, and with ample career opportunities. Located in the lush green campus at Devanahalli, Bengaluru, the full-fledged, year-long residential academy offers a comprehensive football programme integrated with quality education.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> We are an international soccer academy in India with UEFA Pro licensed coaches and players from all over the world.</li>
+              <li><i class="bi bi-check-circle"></i>We train you with the European football style and make you a better player.</li>
+              <li><i class="bi bi-check-circle"></i> We find you professional clubs to train as a trial in different part of the world, thanks to our net of football scouts.</li>
+              <li><i class="bi bi-check-circle"></i>If you impress the clubs, you will have the possibility to sign a Pro contract and join a football academy.</li>
+            </ul> 
+            <p>
+              We offers short-term Football training programmes across all skill levels. The centers spread all over the city offer world-class coaching and international grade facilities for youngsters who wish to pursue their passion for football while developing skill-sets, fitness, competitive spirit and a sense of fraternity.
+
+
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>HOW DOES ELITE FOOTBALL ACADEMY WORK?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 mt-3 mt-lg-0">
+            <div class="box" style="width: 18rem; height: 516px;">
+              <img class="card-img-top" src="https://alicantefootballacademy.com/wp-content/uploads/elementor/thumbs/sign-pen-business-document-48148-scaled-oqiml1p8t8adapaevp45amnb10bop1ots3oan5swe8.jpg" alt="Card image cap">
+              <div class="card-img-top">
+                <h5 class="card-title">Join the Academy<br>
+                Filling up our Form</h5>
+                
+                <p class="card-title"><br>To join our soccer school fill the registration form below. Before that, check all our information and chose how long you want to join us in the Join The Academy section.</p>
+                <a href="#" class="btn btn-primary mt-3"> Registration Form</a>
+                
+    
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3">
+            <div class="box" style="width: 18rem;">
+              <img class="card-img-top" src="https://alicantefootballacademy.com/wp-content/uploads/2020/09/players-training-in-football-academy-in-spain.jpg" alt="Card image cap">
+              <div class="card-img-top">
+                <h5 class="card-title" >Train and develop<br>
+                  With our UEFA Qualified coaches</h5>
+                
+                <p class="card-title">You will train in the mornings with Alicante Football Academy players and in the evenings with Professional Spanish teams in Alicante for a chance to get a contract.</p>
+                <a href="#" class="btn btn-primary mt-3">Football Training</a>
+                
+    
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-3 mt-lg-0">
+            <div class="box" style="width: 18rem;">
+              <img class="card-img-top" src="https://alicantefootballacademy.com/wp-content/uploads/elementor/thumbs/book-1845356_1920-oqimm0h9u3lz89vw8m5ccvvd09k9luiw8vt9eedc0a.jpg" alt="Card image cap">
+              <div class="card-img-top">
+                <h5 class="card-title" >Work in your studies<br>
+                  Live in our academy</h5>
+                
+                <p class="card-title">Enjoy the comfortable life living in our international academy and improve your level with our daily training, gym and other facilities. Work in your studies with our Advanced Coaching Course.</p>
+                <a href="#" class="btn btn-primary mt-3"> Residential Football Academy</a>
+                
+    
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-3 mt-lg-0">
+            <div class="box" style="width: 18rem;">
+              <img class="card-img-top" src="https://alicantefootballacademy.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2020-03-28-at-15.31.07-oqimrd66r4xrcc3zzffv218us96ifsrvbdjss4fmkg.jpeg" alt="Card image cap">
+              <div class="card-img-top">
+                <h5 class="card-title" >Train with Pro Clubs<br>
+Get a Professional Contract in Pro Clubs.
+                  </h5>
+                
+                <p class="card-title"><br> Showcase  your talents,  
+                 skills,and new soccer abilities when you train with Pro Clubs  and join them with a Professional Contract.</p>
+                <a href="#" class="btn btn-primary mt-3">Football trials in other country</a>
+                
+    
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+  
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Infrastructure</h2>
+          <p>Check Our Academy</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Natural & Synthetic Turf</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Dressing Room</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Canteen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Hostels / Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Gym / Other Entertainment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Our Turfs</h3>
+                    <p class="fst-italic">Elite Academy have 1 Natural and 2 Synthetic Turfs for Training and Playing</p>
+                    <p>These grasses are generally 40mm, 45mm, 50mm, 55mm and 60 mm for football use. In order to have the best performance in the field special football shoes must be weared during the game. The best artificial grass carpets are made by European countries and Turkey in the World.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://wallpaperaccess.com/full/4762267.jpg" alt="" class=" img-fluid ">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3 style="font-size: large;">Dressing Room -Place where games can be won or lost before a ball is even kicked.</h3 >
+                    <p class="fst-italic">"The dressing room is football's inner sanctum, a place which can be defined by great togetherness or deep division, where games can be won or lost before a ball is even kicked. We provide a superb locker room for with superb facilities.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://media.istockphoto.com/photos/locker-room-picture-id518222433?k=20&m=518222433&s=612x612&w=0&h=pbqkeot_secL_TgpL2SWW1Vc98dvpkTxuPKb22ruwPU=" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Canteen</h3>
+                    <p class="fst-italic"> we keep our food service area, food display areas and equipment clean and tidy. This will make students and their guest that the canteen items are fresh and safe to eat. Our canteen staff have had food handling training.</p>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hostel facilities</h3>
+                    <p class="fst-italic">AC-Rooms<br>Breakfast-Lunch-dinner<br>wi-fi facilities<br>toilets & washroom<br>24x7 security<br>house keeping</p>
+                   
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://3.imimg.com/data3/KI/ET/MY-11537384/hostel-facility-500x500.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Recreational Activities</h3>
+                    <p class="fst-italic">We have our own Gym for Strength and Conditioning training and  many recreational activities. we are providing good pools,swimming sessions,indoor and outdoor courts, movie hall etc... </p>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUb94JonRrDLvpgkGOs5nuUYZ0v3MCed8oYDaeQ1SvDsg83QYg7gSG8dBs-ouSugM1EHs&usqp=CAU" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Staffs</h2>
+          <p> ELITE FOOTBALL ACADEMY STAFFS</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-21-at-15.57.25-1.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Lauri Nakstroem</h3>
+                  <div class="price">
+                    <p><span>Academy Director</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Our mission is to find you a Professional Club around the world.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> To achieve this, we will work together to improve you as a player and we will present you to clubs.
+
+                      Whatever your current level is, you will train with Pro Clubs in Eite. If you are good enough and they want you you will sign a Professional Football Contract.</li>
+                    <li><i class="bi bi-check-circled"></i> Phone: +34656288990</li>
+                    <li><i class="bi bi-check-circled"></i> E-mail: info@alicantefootballacademy.com</li>
+                  </ul>
+                 
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/09/alicante-football-academy-in-spain-carlos.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Carlos Romero</h3>
+                  <div class="price">
+                    <p><span>Academic Coordinator</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    At the same time, you will work in your studies.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> With our Advanced Coaching Course and our English Courses
+                      Our Soccer Academy for students is the stepping stone before becoming a professional footballer.</li>
+                    <li><i class="bi bi-check-circled"></i>Phone: +916589436783</li>
+                    <li><i class="bi bi-check-circled"></i>E-mail: info@eliteacademics.com</li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+            
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/09/alicante-soccer-academy-in-spain-julio.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Julio Bonmati</h3>
+                  <div class="price">
+                    <p><span>Academy Head Coach</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Our Top Class facilities will make you feel like a high standard Pro Player.
+ 
+
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> 
+                      You will live in the Residential Academy Hostel with the other players. Morning trainings will take place in our Soccer School fields. We have our own Gym for Strength and Conditioning training.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i>Everything you need to live comfortably and perform at your best.</li>
+                    <li><i class="bi bi-check-circled"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/11/alicante-football-academy-in-spain-coach.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Ruben Canos</h3>
+                  <div class="price">
+                    <p><span>Assistant Coach</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    To play in a Elite Soccer Academy and you have to be in peak physical condition.</p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i>
+                      Daily morning strength and conditioning exercises are a focus in the academy.</li>
+                    <li><i class="bi bi-check-circled"></i> You can only perform as good as your body allows you. We take our players fitness to the Pro level.</li>
+                    <li><i class="bi bi-check-circled"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2021/09/goalkeeper-coach-in-spanish-academy.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Oliver Muelas</h3>
+                  <div class="price">
+                    <p><span>Goalkeeper Coach</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    If you’re a keeper, you can learn how to play with your feet in the world.
+ 
+</p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i>
+                     
+Goalkeepers  have the reputation of being technical with their feet.<br> As well as improving you as a keeper.
+
+You will learn to play as the modern style of keeper.</li>
+                    <li><i class="bi bi-check-circled"></i> </li>
+                    <li><i class="bi bi-check-circled"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2021/09/training-coach-in-club-academy-in-spain.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Alberto Rubio</h3>
+                  <div class="price">
+                    <p><span>
+
+                      Technical Coach</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Football clubs always look at your technical abilities when deciding if they want to sign you!
+                  
+</p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i>
+                     
+                      In Elite, we put a lot of emphasis on technical training and improving your skills and touch.You will get individual skills training in the morning <br>trainings to being the best out of you!
+                    
+   </li>
+                    <li><i class="bi bi-check-circled">
+                      </i> </li>
+                    <li><i class="bi bi-check-circled"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://alicantefootballacademy.com/wp-content/uploads/2021/09/international-trainer-in-football-academy-in-spain.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Rauno Post</h3>
+                  <div class="price">
+                    <p><span>
+
+                      Administrator</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    We want your experience in other parts of the world to be excellent! We have a very structured methodology to have everything under control.
+ 
+</p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i>
+                     
+                      We make your English experience smooth, and make sure the rooms are set up, you’re taken to every session and trial, the sessions start on time and that everything is set up correctly.</li>
+                    <li><i class="bi bi-check-circled"></i> </li>
+                    <li><i class="bi bi-check-circled"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Registration</h2>
+          <p>Book for Trials</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Submit Here</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Elite has been a life changer for my. He has developed his health and physique. He is a disciplined and responsible child now. Mainly, his football skills have gained excellence.want to thank RFC and staff for all you do in making a difference in the lives of boys and young men While we are satisfied with ELITE's current training, we hope you for further growth in Karmanya's skill techniques and game.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="https://rfcfootballacademy.in/assets/img/Parents/KARMANYA-PARENTS.jpg" class="testimonial-img" alt="">
+                <h3>SRISHTIBHEN & RAJESH LALCHANDANI
+
+                  
+                  
+                  </h3>
+                <h4>PARENT -KARMANYA LALCHANDANI</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  It has been a wonderful experience for Alphons. Staying in the hostel, adapting and adjusting himself with other students on and off the field  has developed so much of his skills. His passion for football continues to grow and the academy helps him to be more hardworking, persevering with a spirit to achieve his goal.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="https://rfcfootballacademy.in/assets/img/Parents/ALPHONS-V-WAHLANG-SISTER.jpg" class="testimonial-img" alt="">
+                <h3>CYNTHIA WAHLANG
+
+                  </h3>
+                <h4>SISTER | ALPHONS V WAHLANG</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                   I want to thank ELITE and staff for all you do in making a difference in the lives of boys and young men. I really believe you are doing your best to develop positive role models and young men that can and will make a difference. My son Aman knows ELITE really cares about him and his future as a football player, as a leader, and as a person.
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="https://rfcfootballacademy.in/assets/img/Parents/AMAN-FODKAR-MOM.jpg" class="testimonial-img" alt="">
+                <h3>RAHILA KHALIL FODKAR</h3>
+                <h4>PARENT | AMAN FODKAR</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I am really happy to have put my son in ELITE. I can see how the academy has moulded my son to be an independent individual. Players are getting adequate amount of practise, workout and excellent motivation. Parents on the other hand are being well informed on a regular basis. Well done ELITE. Wishing the academy and players to reach greater heights.
+                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="https://rfcfootballacademy.in/assets/img/Parents/SAGAR-BAIJU-MOM.jpg" class="testimonial-img" alt="">
+                <h3>ASHA BAIJU
+
+                  
+                  
+                  </h3>
+                <h4>PARENT | SAGAR BAIJU</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Elite have coaches with international experience provide them with individual attention and great care to improve their game.I am very happy that students have gym and swimming sessions along with  football training. The overall development of a player is taken into consideration which has helped my son to grow physically, psychologically, socially, mentally and has taken his game into next level.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Mathews</h3>
+                <h4>PARENT | DAVID JOHN</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>ACHIEVEMENTS</h2>
+          <p>SUCCESS STORIES IN OUR SOCCER ACADEMY</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2021/08/football-academy-in-spain-player-signed-with-spanish-team-new-contract.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2021/08/football-academy-in-spain-player-signed-with-spanish-team-new-contract.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/05/soccer-academy-in-spain-newspaper-e1588848269420.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/05/soccer-academy-in-spain-newspaper-e1588848269420.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/11/football-academy-spain-success-story-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/11/football-academy-spain-success-story-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/05/alicante-academy-player-signed-la-nucia-768x768.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/05/alicante-academy-player-signed-la-nucia-768x768.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/05/alicante-football-academy-player-signed-spanish-club-768x768.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/05/alicante-football-academy-player-signed-spanish-club-768x768.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/07/soccer-academy-in-europe-success-story-1.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/07/soccer-academy-in-europe-success-story-1.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2020/10/alicante-football-soccer-academy-in-spain-story-sucess-768x768.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2020/10/alicante-football-soccer-academy-in-spain-story-sucess-768x768.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://alicantefootballacademy.com/wp-content/uploads/2021/06/football-academy-in-spain-player-in-newspaper.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://alicantefootballacademy.com/wp-content/uploads/2021/06/football-academy-in-spain-player-in-newspaper.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>OWNERS</h2>
+          <p>Our MANAGEMENT</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="https://www.motilaloswalmf.com/images/people/1098794503Mahavir.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>MIHIR PATHAK</h4>
+                  <span>CO-OWNER</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://www.spjain.org/hs-fs/hubfs/images/2019/org/gfmb/why-sp-jain/DEVELOP-DECISION-MAKING-%26-LEADERSHIP-SKILLS.jpg?width=500&name=DEVELOP-DECISION-MAKING-%26-LEADERSHIP-SKILLS.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>NIKHIL ARAVIND</h4>
+                  <span>MANAGER</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="https://www.frontier-economics.com.au/wp-content/uploads/2018/06/daveappels_revised-500x500.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CO-OWNER</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15551.560783975057!2d77.61530952698266!3d12.978874303616585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1634273053982!5m2!1sen!2sin" width="1520" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street,Bengaluru, KA 535022</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 6589 5488 55</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>ELITE ACADEMY</h3>
+              <p>
+                A108 Adam Street <br>
+                KA 535022, INDIA<br><br>
+                <strong>Phone:</strong> +91 6589 5488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Football Coaching</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Individual Skill Training</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Academics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spoken English</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a>Swimming sessions</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>We’ll send official updates direct from the academy. Unsubscribe at any time in your browser settings.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Elite academy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Designers360</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
